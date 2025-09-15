@@ -32,6 +32,8 @@ function App() {
         <Route path="/analyze" element={<ProtectedRoute><AnalyzeResume /></ProtectedRoute>} />
         <Route path="/resume/:id" element={<ProtectedRoute><ResumeById /></ProtectedRoute>} />
         <Route path="/upload" element={<ProtectedRoute><UploadResume /></ProtectedRoute>} />
+        <Route path="*" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+
       </Routes>
     </Router>
   );

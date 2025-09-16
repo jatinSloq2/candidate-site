@@ -12,7 +12,8 @@ function ProtectedRoute({ children }) {
   if (isLoggedIn) {
     return children;
   } else {
-    window.location.href = "https://auth.jatinsinghdev.tech";
+    // window.location.href = "https://auth.jatinsinghdev.tech";
+    console.log("Not Logged In");
     return null;
   }
 
